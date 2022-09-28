@@ -21,13 +21,13 @@ const routes = [
                 name: 'Inbox',
                 path: 'inbox',
                 icon: 'mdi-inbox-full',
-                component: () => import(/* webpackChunkName: "inbox" */ '../views/Inbox.vue')
+                component: () => import(/* webpackChunkName: "inbox" */ '../views/mails/Inbox.vue')
             },
             {
                 name: 'EmailCompose',
                 path: 'email-compose',
                 icon: 'mdi-email-edit',
-                component: () => import(/* webpackChunkName: "email-compose" */ '../views/EmailCompose.vue')
+                component: () => import(/* webpackChunkName: "email-compose" */ '../views/mails/EmailCompose.vue')
             }]
     },
     {
@@ -37,22 +37,28 @@ const routes = [
         component: () => import(/* webpackChunkName: "page" */ '../views/Page.vue'),
         children: [
             {
+                name: 'Profile',
+                path: 'profile',
+                icon: 'mdi-receipt-text',
+                component: () => import(/* webpackChunkName: "profile" */ '../views/pages/Profile.vue')
+            },
+            {
                 name: 'Pricing',
                 path: 'pricing',
                 icon: 'mdi-receipt-text',
-                component: () => import(/* webpackChunkName: "invoice" */ '../views/Pricing.vue')
+                component: () => import(/* webpackChunkName: "invoice" */ '../views/pages/Pricing.vue')
             },
             {
                 name: 'Chart',
                 path: 'chart',
                 icon: 'mdi-chart-pie',
-                component: () => import(/* webpackChunkName: "chart" */ '../views/Chart.vue')
+                component: () => import(/* webpackChunkName: "chart" */ '../views/pages/Chart.vue')
             },
             {
                 name: 'Receipet',
                 path: 'receipt',
                 icon: 'mdi-receipt-text-plus-outline',
-                component: () => import(/* webpackChunkName: "receipet" */ '../views/Receipet.vue')
+                component: () => import(/* webpackChunkName: "receipet" */ '../views/pages/Receipet.vue')
             },
         ]
     },
@@ -68,23 +74,36 @@ const routes = [
         icon: 'mdi-page-layout-body',
         component: () => import(/* webpackChunkName: "forms" */ '../views/Forms.vue'),
         children: [
+
             {
-                name: 'LoginForm',
-                path: 'loginform',
+                name: 'TailwindStyle',
+                path: 'tailwindstyle',
+                icon: 'mdi-page-layout-body',
+                component: () => import(/* webpackChunkName: "tailwindstyle" */ '../views/forms/TailwindStyle.vue')
+            },
+            {
+                name: 'TableForm',
+                path: 'tableform',
+                icon: 'mdi-page-layout-body',
+                component: () => import(/* webpackChunkName: "tableform" */ '../views/forms/TableForm.vue')
+            },
+            {
+                name: 'ItemList',
+                path: 'itemlist',
                 icon: 'mdi-receipt-text',
-                component: () => import(/* webpackChunkName: "loginform" */ '../views/LoginForm.vue')
+                component: () => import(/* webpackChunkName: "itemlist" */ '../views/forms/ItemList.vue')
             },
             {
                 name: 'RegisterForm',
                 path: 'registerform',
                 icon: 'mdi-chart-pie',
-                component: () => import(/* webpackChunkName: "registerform" */ '../views/RegisterForm.vue')
+                component: () => import(/* webpackChunkName: "registerform" */ '../views/forms/RegisterForm.vue')
             },
             {
                 name: 'UploadForm',
                 path: 'uploadform',
                 icon: 'mdi-receipt-text-plus-outline',
-                component: () => import(/* webpackChunkName: "uploadform" */ '../views/UploadForm.vue')
+                component: () => import(/* webpackChunkName: "uploadform" */ '../views/forms/UploadForm.vue')
             },
         ]
     },

@@ -52,14 +52,14 @@ export default {
                     insert: true
                 },
                 {
-                    name: "Tapash",
+                    name: "Tapas",
                     icon: 'mdi-plus',
                     img: 'https://randomuser.me/api/portraits/men/85.jpg',
                     sub: "as a front-end-developer",
                     insert: true
                 },
                 {
-                    name: "Paul",
+                    name: "Paul2",
                     icon: 'mdi-plus',
                     img: 'https://randomuser.me/api/portraits/men/85.jpg',
                     sub: "as a front-end-developer",

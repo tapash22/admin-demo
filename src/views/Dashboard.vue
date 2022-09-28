@@ -1,7 +1,8 @@
 <template>
   <v-container color="gray">
     <!-- header -->
-    <v-row>
+    <v-row >
+      <!-- <div class="grey lighten-5"> -->
       <v-col cols="6" md="4" sm="6" lg="4">
         <h3 class="mt-2">Dashboard</h3>
       </v-col>
@@ -13,22 +14,25 @@
           </template>
         </v-breadcrumbs>
       </v-col>
+    
     </v-row>
+
     <div class="my-2">
       <DashCard />
     </div>
-
-
+    
     <!-- chart -->
-    <v-row class="my-5">
-      <v-col class="mx-5" cols="6" xs="12" md="7" lg="7" sm="12">
+    <v-row class="my-2">
+      <v-col cols="6" xs="12" md="8" lg="8" sm="12">
         <AreaChart />
       </v-col>
-      <v-col class="mx-5" cols="6" xs="12" md="4" lg="4" sm="12">
+      <v-col  cols="6" xs="12" md="4" lg="4" sm="12">
         <Donut />
       </v-col>
     </v-row>
-    <v-row>
+ 
+ <!-- timeline -->
+    <v-row class="my-2">
       <v-col cols="12" md="6" lg="6" sm="12">
         <CardList/>
       </v-col>
@@ -36,7 +40,7 @@
         <TimeLine />
       </v-col>
     </v-row>
-
+<!-- table -->
     <div>
       <ItemData />
     </div>

@@ -3,8 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
+import colors from 'vuetify/lib/util/colors'
 
 import VueApexCharts from 'vue-apexcharts'
+import './assets/tailwind.css'
 Vue.use(VueApexCharts)
 
 Vue.component('apexchart', VueApexCharts)

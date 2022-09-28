@@ -1,11 +1,22 @@
 <template>
     <v-container>
-        <div>
-            <apexchart type="line" height="230" :options="chartOptions" :series="series"></apexchart>
-        </div>
-        <div>
-            <DataIteration />
-        </div>
+        <v-row>
+            <v-col cols="12" sm="12" lg="12" md="12">
+                <div class="grey lighten-5 pa-5">
+                    <apexchart type="line" height="230" :options="chartOptions" :series="series"></apexchart>
+                </div>
+            </v-col>
+        </v-row>
+
+        <v-row>
+            <v-col cols="12" sm="12" lg="12" md="12">
+                <div class="grey lighten-5 pa-5">
+                    <DataIteration />
+                </div>
+            </v-col>
+        </v-row>
+
+
     </v-container>
 </template>
 

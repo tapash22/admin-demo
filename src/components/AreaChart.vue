@@ -1,6 +1,6 @@
 <template>
-    <div id="chart">
-        <apexchart type="area" height="350" :options="chartOptions" :series="series"></apexchart>
+    <div id="chart" class="grey lighten-5 pa-5">
+        <apexchart type="area" width="620" :options="chartOptions" :series="series"></apexchart>
     </div>
 </template>
 
@@ -17,7 +17,7 @@ export default {
             }],
             chartOptions: {
                 chart: {
-                    height: 350,
+                    height: 400,
                     type: 'area'
                 },
                 dataLabels: {

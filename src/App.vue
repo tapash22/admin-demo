@@ -1,8 +1,11 @@
 <template>
-  <v-app >
-    <navigation-vue/>
-    <v-main >
-      <router-view/>
+  <v-app>
+    <navigation-vue />
+    <v-main>
+      <div class="deep-purple lighten-5">
+        <router-view />
+      </div>
+
     </v-main>
   </v-app>
 </template>
@@ -13,10 +16,10 @@ export default {
   name: 'App',
 
   data: () => ({
-    
+
   }),
 
-  components:{
+  components: {
     NavigationVue,
   }
 };
