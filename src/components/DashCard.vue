@@ -39,7 +39,7 @@ export default {
                 {
                     title: "Active Session",
                     amount: '2,222',
-                    icon: 'mdi-magnify',
+                    icon: 'mdi-card-multiple',
                     color: 'deep-purple',
                     percentage: 59
 
@@ -47,21 +47,21 @@ export default {
                 {
                     title: "Total Revenue",
                     amount: '2,222',
-                    icon: 'mdi-magnify',
+                    icon: 'mdi-animation',
                     color: 'indigo',
                     percentage: 69
                 },
                 {
                     title: "Total Price",
                     amount: '2,222',
-                    icon: 'mdi-magnify',
+                    icon: 'mdi-cash',
                     color: 'purple',
                     percentage: 79
                 },
                 {
                     title: "Add To Card",
                     amount: '2,222',
-                    icon: 'mdi-magnify',
+                    icon: 'mdi-credit-card-plus-outline',
                     color: 'blue',
                     percentage: 89
                 },

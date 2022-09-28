@@ -1,5 +1,5 @@
 <template>
-    <div id="chart" class="grey lighten-5 pa-5">
+    <div id="chart" class="grey lighten-5 pa-5 w-full md:w-full lg:w-full">
         <apexchart type="area" width="620" :options="chartOptions" :series="series"></apexchart>
     </div>
 </template>
@@ -38,6 +38,18 @@ export default {
                         format: 'dd/MM/yy HH:mm'
                     },
                 },
+
+                responsive: [{
+                    breakpoint: 480,
+                    options: {
+                        chart: {
+                            width: 200
+                        },
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }]
             },
 
         }

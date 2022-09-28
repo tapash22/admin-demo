@@ -23,10 +23,10 @@
     
     <!-- chart -->
     <v-row class="my-2">
-      <v-col cols="6" xs="12" md="8" lg="8" sm="12">
+      <v-col cols="12" xs="12" md="8" lg="8" sm="12">
         <AreaChart />
       </v-col>
-      <v-col  cols="6" xs="12" md="4" lg="4" sm="12">
+      <v-col  cols="12" xs="12" md="4" lg="4" sm="12">
         <Donut />
       </v-col>
     </v-row>

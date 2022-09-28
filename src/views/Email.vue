@@ -16,10 +16,10 @@
     </v-row>
     <!-- Main -->
     <v-row>
-      <v-col cols="4" md="3" lg="3" sm="4">
+      <v-col cols="12" md="3" lg="3" sm="4">
         <v-card>
           <div class="d-flex justify-center" dense>
-            <v-btn class="my-5 " color="primary" large>Compose</v-btn>
+            <v-btn class="my-5 " color="primary" @click="onClick()" large>Compose</v-btn>
           </div>
 
           <v-list dense>
@@ -42,7 +42,7 @@
           </v-list>
         </v-card>
       </v-col>
-      <v-col cols="8" md="9" lg="9" sm="8">
+      <v-col cols="12" md="9" lg="9" sm="8">
         <router-view />
       </v-col>
     </v-row>
@@ -94,6 +94,12 @@ export default {
       ],
     }
   },
+
+  methods:{
+    onClick(){
+      this.$router.replace('/email/email-compose')
+    }
+  }
   // computed:{
   //   changeColor(){
   //     isActive:isActive ? 'red lighten-2-text':'purple lighten-1-text'

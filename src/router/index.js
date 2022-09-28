@@ -17,6 +17,7 @@ const routes = [
         component: () => import(/* webpackChunkName: "email" */ '../views/Email.vue'),
 
         children: [
+
             {
                 name: 'Inbox',
                 path: 'inbox',
@@ -36,12 +37,7 @@ const routes = [
         icon: 'mdi-page-layout-body',
         component: () => import(/* webpackChunkName: "page" */ '../views/Page.vue'),
         children: [
-            {
-                name: 'Profile',
-                path: 'profile',
-                icon: 'mdi-receipt-text',
-                component: () => import(/* webpackChunkName: "profile" */ '../views/pages/Profile.vue')
-            },
+
             {
                 name: 'Pricing',
                 path: 'pricing',
@@ -107,6 +103,12 @@ const routes = [
             },
         ]
     },
+    {
+        name: 'Profile',
+        path: '/profile',
+        icon: 'mdi-receipt-text',
+        component: () => import(/* webpackChunkName: "profile" */ '../views/Profile.vue')
+    }
 ]
 
 const router = new VueRouter({

@@ -1,5 +1,5 @@
 <template>
-    <div id="chart" class="grey lighten-5 pa-5">
+    <div id="chart" class="grey lighten-5 pa-5 w-full md:w-full lg:w-full">
         <apexchart type="donut" height="600" :options="chartOptions" :series="series"></apexchart>
         <p class="my-5 font-h5 text-justify pa-5" colored-border>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, ipsa vitae e Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia laudantium tempora optio totam reprehenderit, perspiciatis</p>
     </div>

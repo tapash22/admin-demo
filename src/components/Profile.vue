@@ -3,7 +3,7 @@
         
 
             <v-list dense>
-                <v-list-item v-for="item in items" :key="item.name">
+                <v-list-item v-for="item in items" :key="item.name" :to="item.path">
                     <v-list-item-icon>
                         <v-icon>{{item.icon}}</v-icon>
                     </v-list-item-icon>
@@ -24,15 +24,18 @@ export default {
             items: [
                 {
                     title: 'Profile',
-                    icon: 'mdi-account-circle'
+                    icon: 'mdi-account-circle',
+                    path:'/profile'
                 },
                 {
                     title: 'My-Wallet',
-                    icon: 'mdi-wallet'
+                    icon: 'mdi-wallet',
+                    path:'',
                 },
                 {
                     title: 'Setting',
-                    icon: 'mdi-cog-outline'
+                    icon: 'mdi-cog-outline',
+                    path:''
                 },
                 {
                     title: 'Logout',

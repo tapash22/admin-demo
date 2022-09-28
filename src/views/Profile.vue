@@ -1,7 +1,7 @@
 <template>
     <v-container>
-        <div class="w-full h-screen bg-slate-100 d-flex justify-around">
-            <div class="w-1/3 h-full bg-red-800 d-flex justify-center ">
+        <div class="w-full h-full bg-slate-100 block md:flex lg:flex justify-start">
+            <div class="w-full md:w-1/3 lg:w-1/3 h-full md:max-h-fit bg-red-800 d-flex justify-center ">
                 <div class="card border-2 my-5 mx-2">
                     <div class="card-header mx-auto d-flex justify-center">
                         <div class=" my-2 p-4">
@@ -25,7 +25,8 @@
                     </div>
                 </div>
             </div>
-            <div class="w-2/3 h-full bg-green-800 d-block px-2">
+
+            <div class="w-full md:w-2/3 lg:w-2/3 h-full bg-green-800 d-block px-2">
                 <h2 class="d-flex justify-center text-center text-xl text-white my-2 bottom-2 border-b-2">Skills</h2>
                 <div class="box w-full h-auto my-2 bg-white d-flex justify-start" v-for="skil in skills" :key="skil.id">
                     <div class="title w-1/3 my-auto h-auto">

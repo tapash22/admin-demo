@@ -38,7 +38,7 @@
                 <template v-for="item in $router.options.routes">
                     <!-- use v-if to determine if 2nd level nesting is needed -->
                     <!-- if it's a menu item with no children -->
-                    <v-list-item v-if="!item.children" color="indigo" :key="item.name" :to="item.path">
+                    <v-list-item v-if="!item.children" color="indigo" :key="item.name" :to="item.path" active-class="info">
                         <v-list-item-icon>
                             <v-icon class="white--text">{{ item.icon }}</v-icon>
                         </v-list-item-icon>
