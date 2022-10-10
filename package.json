@@ -9,10 +9,13 @@
   "dependencies": {
     "apexcharts": "^3.35.5",
     "core-js": "^3.8.3",
+    "uuid": "^9.0.0",
     "vue": "^2.6.14",
     "vue-apexcharts": "^1.6.2",
     "vue-datepicker-ui": "^2.3.0",
     "vue-router": "^3.5.1",
+    "vue2-datepicker": "^3.11.0",
+    "vue2-editor": "^2.10.3",
     "vuetify": "^2.6.0",
     "vuex": "^3.6.2"
   },

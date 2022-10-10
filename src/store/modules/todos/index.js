@@ -2,12 +2,14 @@ export default{
     namespaced :true,
     state() {
       return {
+        ttodos:[],
         todos: [
           { id: 1, name: "tapash", des: "this is my first project", done: true },
           { id: 2, name: "tapas", des: "this is my second project", done: true },
           { id: 3, name: "tapa", des: "this is my third project", done: false },
           { id: 4, name: "tap", des: "this is my fourth project", done: false },
-        ]
+        ],
+        employes:[],
       }
     },
   
